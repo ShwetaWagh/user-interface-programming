@@ -1,0 +1,37 @@
+<style>
+*{padding:0px;margin:0px;}
+
+.main{
+    width:970px;height:600px;border:2px solid black;margin:auto;background-color:black;
+
+}
+
+
+
+
+.left{
+    width:950px;height:400px;float:left;margin-top:10px;border:1px solid cyan;margin-left:10px;
+}
+
+
+.left h2{
+    color:white;float:left;padding:10px 60px;
+}
+
+.box1{width:50px;height:50px;background-color:lightgrey;margin-top:10px;margin-right:80px;float:right;}
+.box2{width:50px;height:50px;background-color:lightgrey;margin-top:100px;margin-right:-50px;float:right;}
+
+.b1{font-size:30px;color:lightgrey;margin-top:10px;margin-left:790px;float:left;}
+.b2{font-size:30px;color:lightgrey;margin-top:15px;float:right;margin-right:-80px;}
+
+
+.b3{font-size:30px;color:lightgrey;margin-top:100px;margin-left:790px;float:left;}
+.b4{font-size:30px;color:lightgrey;margin-top:110px;margin-right:-80px;float:right;}
+
+.button{margin-top:150px;font-size:30px;color:cyan;float:right;margin-right:20px;background-color:black;}
+.button1{margin-top:40px;font-size:30px;color:cyan;float:right;margin-right:10px;background-color:black;}
+.button2{margin-top:40px;font-size:30px;color:cyan;float:right;margin-right:20px;background-color:black;}
+.button3{margin-top:130px;font-size:30px;color:cyan;float:left;margin-right:20px;background-color:black;}
+
+
+</style>

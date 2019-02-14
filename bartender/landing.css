@@ -1,0 +1,47 @@
+<style>
+*{padding:0px;margin:0px;}
+
+.main{
+    width:970px;height:600px;border:2px solid black;margin:auto;background-color:black;
+
+}
+
+
+.left{
+    width:480px;height:600px;float:left;
+}
+.left h1{
+    color:pink;
+    margin:200px 200px;
+}
+.left a{
+    text-decoration:none;
+}
+.left a:hover{font-size:25px;}
+.right{
+    width:480px;height:600px;float:right;
+}
+.right h1{
+    color:pink;
+    margin:200px 200px;
+}
+.right a{
+    text-decoration:none;
+}
+.right a:hover{font-size:25px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
