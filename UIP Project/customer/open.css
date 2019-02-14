@@ -1,0 +1,47 @@
+<style>
+*{padding:0px;margin:0px;}
+
+.main{
+    width:970px;height:600px;border:2px solid black;margin:auto;background-color:black;
+
+}
+.top{
+    width:800px;height:100px;background-color:lawngreen;margin:auto;
+}
+.top h1{
+    color:darkgreen;float:left;margin:10px 178px;font-size:50px;
+}
+
+
+.container{
+    width:500px;height:410px;border:1px solid red;float:left;margin:20px 230px;
+}
+
+.l h1{
+    margin:10px 200px;position:absolute;
+}
+
+
+.a{
+    width:220px;height:50px;float:left;border:1px solid red;margin-left:140px;margin-top:24px;
+}
+.b{
+    color:white;margin:20px 159px;
+}
+.c{
+    color:white;margin:40px 152px;
+}
+.d{
+    color:Yellow;margin:20px 159px;
+}
+
+
+
+.button1{
+    margin:60px 190px;height:50px;width:100px;background-color:black;color:Green;font-size:20px;border-radius:10px;
+}
+
+.button2{
+    float:right;margin-top:-10px;height:50px;width:100px;background-color:black;color:red;font-size:20px;border-radius:10px;
+}
+</style>

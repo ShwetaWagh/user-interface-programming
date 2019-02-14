@@ -1,0 +1,71 @@
+<style>
+*{padding:0px;margin:0px;}
+
+.main{
+    width:970px;height:600px;border:2px solid black;margin:auto;background-color:black;
+
+}
+.top{
+    width:806px;height:100px;border:1px solid white;margin:auto;
+}
+.top h1{
+    color:white;float:left;margin:10px 270px;font-size:50px;
+}
+
+
+.left{
+    width:400px;height:410px;border:1px solid red;float:left;margin-left:80px;
+}
+
+.l{
+    width:400px;height:70px;background-color:white;
+}
+.l h1{
+    margin:10px 150px;position:absolute;
+}
+
+.a{
+    color:white;margin:20px 120px;
+}
+
+.b{
+    color:white;margin:100px 105px;
+}
+.right{
+    width:400px;height:410px;border:1px solid red;float:right;margin-right:80px;
+}
+
+.r{
+    width:400px;height:70px;background-color:white;
+}
+
+.r h1{
+    margin:10px 150px;position:absolute;
+}
+
+.a1{
+    color:white;margin:20px 110px;
+}
+
+
+
+.c{
+    width:200px;height:50px;float:left;border:1px solid red;margin-left:100px;margin-top:-15px;
+}
+.d{
+    width:200px;height:50px;float:left;border:1px solid red;margin-left:100px;margin-top:-90px;
+}
+.e{
+    width:200px;height:50px;float:left;border:1px solid red;margin-left:100px;margin-top:-12px;
+}
+
+.button1{
+    margin:-4px 270px;height:50px;width:100px;background-color:black;color:Green;font-size:20px;border-radius:10px;
+}
+.button2{
+    margin:160px 270px;height:50px;width:100px;background-color:black;color:Green;font-size:20px;border-radius:10px;
+}
+.button3{
+    margin:10px 430px;height:50px;width:100px;background-color:black;color:red;font-size:20px;border-radius:10px;
+}
+</style>

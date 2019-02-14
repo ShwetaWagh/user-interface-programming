@@ -1,0 +1,47 @@
+<style>
+*{padding:0px;margin:0px;}
+
+.main{
+    width:970px;height:600px;border:2px solid black;margin:auto;background-color:black;
+
+}
+.top{
+    width:800px;height:100px;border:1px solid white;margin:auto;
+}
+
+.top h1{
+    color:pink; margin:20px 130px;font-size:50px;
+}
+
+
+.left{
+    width:300px;height:300px;margin-top:20px;margin-left:170px;float:left;
+}
+
+.left h1{
+    color:white;padding:30px 50px;
+}
+
+.right{
+    width:300px;height:300px;margin-top:20px;margin-right:170px;float:right;
+}
+
+
+.u{
+    width:300px;height:50px;border:1px solid white;margin-top:50px;
+}
+
+.p{
+    width:300px;height:50px;border:1px solid white;margin-top:80px;
+}
+
+
+.button1{
+    margin-left:400px;height:50px;width:100px;background-color:black;color:Green;font-size:20px;border-radius:10px;
+}
+
+.button2{
+    margin-top:50px;float:right;height:50px;width:100px;background-color:black;color:Red;font-size:20px;border-radius:10px;
+}
+
+</style>

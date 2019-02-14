@@ -1,0 +1,57 @@
+<style>
+*{padding:0px;margin:0px;}
+
+.main{
+    width:970px;height:600px;border:2px solid black;margin:auto;background-color:black;
+
+}
+
+
+
+
+.left{
+    width:400px;height:450px;float:left;margin-top:10px;background-color:red;margin-left:50px;
+}
+
+
+.right{
+    width:400px;height:450px;float:right;margin-top:10px;margin-right:50px;background-color:green;
+}
+.l {float:left;width:200px;height:450px;background-color:darkcyan;}
+.l h3{color:white;float:left;padding-left:30px;}
+.r {float:right;width:200px;height:450px;background-color:lightcyan;}
+.r h3{color:darkcyan;float:left;padding-left:80px;}
+
+/*-----------------------headings----------------------------------------------------*/
+
+
+.left1{
+    width:400px;height:50px;float:left;border:1px solid red;margin-top:30px;margin-left:50px;
+}
+.left1 h1{
+    color:white;float:left;margin:6px 150px;
+}
+
+
+
+.right1{
+    width:400px;height:50px;float:right;border:1px solid red;margin-right:50px;margin-top:30px;
+}
+.right1 h1{
+    color:white;float:left;margin:6px 100px;
+}
+
+
+.button{margin-top:20px;font-size:30px;color:red;float:right;background-color:black;}
+
+
+
+
+
+
+
+
+
+
+
+</style>

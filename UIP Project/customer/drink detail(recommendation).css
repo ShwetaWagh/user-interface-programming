@@ -1,0 +1,64 @@
+<style>
+*{padding:0px;margin:0px;}
+
+.main{
+    width:970px;height:600px;border:2px solid black;margin:auto;background-color:black;
+
+}
+
+
+
+
+.left{
+    width:600px;height:400px;float:left;margin-top:10px;
+}
+
+.l {float:left;width:190px;height:400px;background-color:darkcyan;}
+.l h3{color:white;float:left;padding-left:50px;}
+.m {float:left;width:190px;height:400px;margin-left:10px;}
+.m h3{color:white;float:left;padding-left:70px;}
+.r {float:right;background-color:darkcyan;width:190px;height:400px;}
+.r h3{color:white;float:left;padding-left:30px;}
+
+.right{
+    width:300px;height:400px;float:left;margin-top:10px;margin-left:50px;border:1px solid cyan;
+}
+
+.right h3{
+    color:white;float:left;padding-left:100px;
+}
+
+.right a:hover{font-size:20px;}
+
+.left1{
+    width:600px;height:50px;float:left;border:1px solid red;margin-top:30px;
+}
+.left1 h1{
+    color:white;float:left;margin:6px 240px;
+}
+
+
+
+.right1{
+    width:300px;height:50px;float:left;border:1px solid red;margin-left:50px;margin-top:30px;
+}
+.right1 h1{
+    color:white;float:left;margin:6px 100px;
+}
+
+
+
+
+.button{margin-top:50px;font-size:30px;color:cyan;float:right;margin-right:20px;background-color:black;}
+.button1{margin-top:260px;font-size:30px;color:cyan;float:right;margin-right:100px;background-color:black;}
+
+
+
+
+
+
+
+
+
+
+</style>
