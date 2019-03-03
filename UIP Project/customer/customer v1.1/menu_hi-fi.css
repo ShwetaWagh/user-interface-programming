@@ -1,0 +1,173 @@
+<style>
+        *{padding:0px;margin:0px;}
+
+        .main{
+            width:100%;height:100%;margin:auto; background-image: url("images/wood_bg.jpg");background-size: cover;
+            position:relative;
+        }
+
+        .menu{
+            width:900px;
+            height:940px;
+            float:left;
+            margin-top:90px;
+            margin-left:30px;
+            position:relative;
+            background-image: url("images/Menu_BG.png");
+            background-size: 100% 100%;
+            padding:0px;
+            background-position: center;
+
+        }
+
+
+
+
+/*--------------- left menu image-------*/
+
+
+        /*--------------- top nav-------*/
+        .top_nav{
+            width:30%;
+            height:10%;
+            float:left;
+            margin-left:490px;
+            margin-top:70px;
+            position:absolute;
+        }
+        
+        .top_nav h2{
+            border:1px solid white;
+            color:white;
+            float:left;
+            width:80px;
+            text-align:center;
+            margin-top:30px;
+        }
+
+        /*------ left images section-----*/
+
+
+        .left_image{
+            width:25%;
+            height:70%;
+            float:left;
+            margin-left:115px;
+            margin-top:167px;
+            position:absolute;
+        }
+        /*------ mid content section-----*/
+
+        .mid_content{
+            width:30%;
+            height:70%;
+            float:left;
+            margin-left:340px;
+            margin-top:167px;
+            position:absolute;
+        }
+
+       .mid_content_left{
+           height:100%;
+           width:48%;
+           float:left;
+       }
+
+       .mid_content_left h2,h3{
+           color:white;
+       }
+
+       .mid_content_left h3{
+           font-size:17px;
+       }
+        .mid_content_right{
+            height:100%;
+            width:48%;
+            float:right;
+        }
+
+        .mid_content_right h3{
+            color:white;
+            font-size:17px;
+            margin-left:60px;
+        }
+/*------ right price section-----*/
+       .right_price{
+             width:20%;
+            height:70%;
+            float:left;
+            margin-left:610px;
+            margin-top:167px;
+            position:absolute;
+        }
+
+       .right_price img{
+           width:40px;
+           height:115px;
+           margin-left:55px;
+           float:left;
+
+       }
+        
+/*------ right section for order list----*/
+        .right{
+    width:30%;height:100%;background-color:black;float:right;position:absolute;margin-left:70%;opacity:0.4;
+}
+.right img{
+    width:50px;height:50px;float:right;margin-right:15px;
+}
+.right h3{
+    float:right;color:white;margin-top:15px;
+
+}
+        .right h1{
+            color:white;
+            margin-top:100px;
+            margin-left:40px;
+        }
+        
+        .right h2{
+            color:white;
+            margin:40px 40px;;
+        }
+
+/*------------right section undo redo and view total-----*/
+        
+        #bottom_button{
+            margin-top:550px;
+            margin-left:80px;
+            color:white;
+            border:2px solid white;
+            width:250px;
+            text-align:center;
+            padding:15px;
+        }
+        
+        #undo{
+           margin-top:430px;
+            margin-right: 220px;
+        }
+        
+        #redo{
+             margin-top:-50px;
+            margin-right: 150px;
+            transform: scaleX(-1);
+        }
+        
+        #span1{
+            position: absolute;
+            width: 75px;
+            height: 15px;
+            left: 150px;
+            top: 900px;
+            color:white; 
+        }
+        #span2{
+            position: absolute;
+            width: 75px;
+            height: 15px;
+            left: 210px;
+            top: 900px;
+            color:white; 
+        }
+    </style>
