@@ -69,11 +69,13 @@ $result1=mysqli_query($conn, $sqll2);
                     ?>
 
                             <!--insert data-->
-                            <div class="product_drag customer_menu_item_name" data-id="<?php echo $B_id;?>" data-quantity="1" style="cursor:move">
+                            <div class="product_drag customer_menu_item_name" data-id="<?php echo $B_id;?>" data-quantity="1" style="cursor:move,overflow:hidden">
+                                <div class="no-select" draggable="true">
                                 <h1>
                                     <img src="../Images/create_icon.png">
                                     <?php echo $name;?>
                                 </h1>
+                                </div>
                                 <table class="customer_menu_table">
 
                                     <tr>
@@ -124,30 +126,112 @@ $result1=mysqli_query($conn, $sqll2);
                                     <td>Qtn.</td>
                                 </tr>
                             </table>
-                            <table class="customer_menu_order_table">
-                                <div id="dragable_product_order"></div>
+
+                            <table id="" class="customer_menu_order_table">
+                                    <div id="dragable_product_order" class="" style="position: relative;width: 100%"></div>
+
                             </table>
+
+
                         </div>
 
 
                         <!--list order list-->
 
                         <div class="customer_menu_center">
-                            <button class="customer_menu_undo_redo">Undo</button>
-                            <button class="customer_menu_undo_redo">Redo</button>
+                            <button class="undo">Undo</button>
+                            <button class="redo">Redo</button>
                         </div>
                         <div class="customer_menu_center">
                             <a href="customer_confirm_order.php"><button class="customer_menu_button">View Order</button></a>
                             <a href="customer_index.php"><button class="customer_menu_button">Cancel</button></a>
                         </div>
+
+
                     </div>
                 </div>
-
             </div>
-
         </div>
 
         <!--jQuery to complete DnD also add data to DB-->
+        <script src="undo-master/undo.js"></script>
+        <script src="undo-master/vendor/jquery-1.5.1.js"></script>
+        <script>
+            $(function() {
+                var stack = new Undo.Stack(),
+                    EditCommand = Undo.Command.extend({
+                        constructor: function(textarea, oldValue, newValue) {
+                            this.textarea = textarea;
+                            this.oldValue = oldValue;
+                            this.newValue = newValue;
+                        },
+                        execute: function() {
+                        },
+                        undo: function() {
+                            this.textarea.html(this.oldValue);
+                        },
+
+                        redo: function() {
+                            this.textarea.html(this.newValue);
+                        }
+                    });
+                stack.changed = function() {
+                    stackUI();
+                };
+
+                var undo = $(".undo"),
+                    redo = $(".redo"),
+                    dirty = $(".dirty");
+                function stackUI() {
+                    undo.attr("disabled", !stack.canUndo());
+                    redo.attr("disabled", !stack.canRedo());
+                    dirty.toggle(stack.dirty());
+                }
+                stackUI();
+
+                $(document.body).delegate(".undo, .redo, .save", "click", function() {
+                    var what = $(this).attr("class");
+                    stack[what]();
+                    return false;
+                });
+
+                var text = $("#text"),
+                    startValue = text.html(),
+                    timer;
+                $("#text").bind("keyup", function() {
+                    // a way too simple algorithm in place of single-character undo
+                    clearTimeout(timer);
+                    timer = setTimeout(function() {
+                        var newValue = text.html();
+                        // ignore meta key presses
+                        if (newValue != startValue) {
+                            // this could try and make a diff instead of storing snapshots
+                            stack.execute(new EditCommand(text, startValue, newValue));
+                            startValue = newValue;
+                        }
+                    }, 250);
+                });
+
+                $(".bold").click(function() {
+                    document.execCommand("bold", false);
+                    var newValue = text.html();
+                    stack.execute(new EditCommand(text, startValue, newValue));
+                    startValue = newValue;
+                });
+
+                $(document).keydown(function(event) {
+                    if (!event.metaKey || event.keyCode != 90) {
+                        return;
+                    }
+                    event.preventDefault();
+                    if (event.shiftKey) {
+                        stack.canRedo() && stack.redo()
+                    } else {
+                        stack.canUndo() && stack.undo();
+                    }
+                });
+            });
+        </script>
         <script>
             $(document).ready(function(data) {
 
@@ -200,8 +284,52 @@ $result1=mysqli_query($conn, $sqll2);
             }
 
         </script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+        <script type="text/javascript">
+            window.onload=function(){
+                var tempDiv;
+                document.getElementById("select").addEventListener("drop",function(ev){
+                    ev.preventDefault();
+                    console.log("s");
+                    var div = document.createElement("div");
+                    div.style.backgroundColor = "red";
+                    console.log($(".miao"));
+                    document.getElementById("select").insertBefore(div,$(".miao")[0]);
+                    tempDiv.remove();
+                })
+                document.getElementById("select").addEventListener("dragover",function(ev){
+                    ev.preventDefault();
+                    var $main = $('.select div'); // 局部变量：按照重新排列过的顺序 再次获取 各个元素的坐标，
+                    tempDiv = $(".miao"); //获得临时 虚线框的对象
+                    for( let i = 0;i < $main.length; i++){
+                        let x = $main[i].getBoundingClientRect().left;
+                        let y = $main[i].getBoundingClientRect().top;
+
+                        if (ev.clientY > y && ev.clientY < (y + 50) ) {
+                            tempDiv.insertBefore($main[i]);
+                        }
+                    }
+                });
+
+                document.getElementsByClassName("no-select")[0].addEventListener("dragstart",function(ev){
+                    ev.dataTransfer.setData("Text",this.innerText + "+" + this.className);
+
+                    var div = document.createElement("div");
+                    div.style.backgroundColor = "red";
+                    div.className="miao";
+                    div.style.opacity = "0.2";
+                    document.getElementById("select").appendChild(div);
+                });
+                document.getElementsByClassName("no-select")[0].addEventListener("mousedown",function(ev){
+
+
+                });
+
+            }
+        </script>
+
     </body>
 
-    </html>
+</html>
     <!--DnD reference-->
     <!--https://www.sourcecodester.com/tutorials/php/11641/drag-drop-and-insert-database-using-ajaxjquery-php.html-->
