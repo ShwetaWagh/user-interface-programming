@@ -26,29 +26,34 @@ if(mysqli_query($conn, $sqll3)) $result1=mysqli_query($conn, $sqll2);
     
     <body class="customer_index_body">
         
-        <div class="customer_header">
-            <img class="customer_language" src="../Images/language_icon.png" alt="Change Language">
+        <div class="customer_bg_dark_overlay">
+            
+            
+                <div class="customer_header">
+                    <img class="customer_language" src="../Images/language_icon.png" alt="Change Language">
 
-        </div>
-        
-        <div>
-            <div class="customer_row">
-              <div class="customer_index_left">
-                
-                  <img class="customer_index_img" src="../Images/promotion.png" alt="promotion">
-                
                 </div>
-              <div class="customer_index_right">
-                  <img class="customer_index_logo"
-                       src="../Images/Dutchman_Logo.png" alt="Logo">
-                  <h1>Welcome abroad!</h1>
+
+                <div>
+                    <div class="customer_row">
+                      <div class="customer_index_left">
+
+                          <img class="customer_index_img" src="../Images/promotion.png" alt="promotion">
+
+                        </div>
+                      <div class="customer_index_right">
+                          <img class="customer_index_logo"
+                               src="../Images/Dutchman_Logo.png" alt="Logo">
+                          <h1>Welcome abroad!</h1>
+                        </div>
+                    </div>
+
+                    <div class="customer_index_menu">
+                        <a href="customer_menu.php"><img src="../Images/menu_btn_right.png"></a>
+                    </div>
+
                 </div>
             </div>
         
-            <div class="customer_index_menu">
-                <a href="customer_menu.php"><img src="../Images/menu_btn_right.png"></a>
-            </div>
-        
-        </div>
     </body>
 </html>
