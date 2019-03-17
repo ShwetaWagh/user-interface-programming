@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="UTF-8">
+        <title>Bartender Home</title>
+        
+        <!-- load custom style sheet -->
+        <link rel="stylesheet" type="text/css" href="bartender.css">
+        
+    
+    </head>
+    
+    <body class="bartender_body">
+        
+        <div class="bartender_header">
+            <img id="switch_lang" class="bartender_header_icon_single" src="image/language_icon.png" alt="Change Language">
+            <img class="bartender_header_icon_single" src="image/logout_icon.png"onClick="logoutClick()">
+
+        </div>
+        
+        <div>
+        
+            <div class="bartender_home_row">
+              <div class="bartender_home_leftcolumn">
+                
+                  <img lang="en" class="bartender_home_image_btn" src="image/bartender_stock_btn.png" alt="View Stock" onClick="stockMenuClick()">
+                  
+                  <img lang="ch" class="bartender_home_image_btn" src="image/bartender_stock_btn_ch.png" alt="View Stock" onClick="stockMenuClick()">
+                
+                </div>
+              <div class="bartender_home_rightcolumn">
+                
+                  <img lang="en" class="bartender_home_image_btn"
+                       src="image/bartender_order_btn.png" alt="View Order" onClick="orderMenuClick()">
+                  
+                  <img lang="ch" class="bartender_home_image_btn"
+                       src="image/bartender_order_btn_ch.png" alt="View Order" onClick="orderMenuClick()">
+                
+                </div>
+            </div>
+        
+        
+        </div>
+        
+        <script src="controller/jquery-3.3.1.js"></script>
+        <script src="controller/bartender_js.js"></script>
+        
+    </body>
+</html>
