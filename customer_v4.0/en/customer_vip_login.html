@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>VIP Login</title>
+
+    <!-- load customer style sheet -->
+    <link rel="stylesheet" type="text/css" href="customer_test.css">
+
+</head>
+
+<body class="customer_index_body">
+
+    <div class="customer_header">
+        <img class="customer_language" src="../Images/language_icon.png" alt="Change Language">
+
+    </div>
+
+    <div>
+        <div class="customer_row">
+            <div class="customer_vip_login_left">
+
+                <img class="customer_vip_login_img" src="../Images/VIP_Logo_loggin.png" alt="promotion">
+
+            </div>
+            <div class="customer_vip_login_right">
+                <div class="customer_vip_login_center">
+                <form action="login.php"  method="POST" class="customer_vip_login_input_style">
+
+                    <input class="customer_vip_login_input" type="email" name="email" placeholder="email">
+
+                    <br>
+                    <input class="customer_vip_login_input" type="password" name="password" placeholder="password">
+
+                    <br>
+                    
+                    <!-- call login.php to validate with database-->
+                    
+                    <button type="submit" class="customer_vip_login_button">Login</button>
+                    <a href="customer_confirm_order.php"><button class="customer_vip_login_button">Back</button></a>
+                </form></div>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+
+</html>

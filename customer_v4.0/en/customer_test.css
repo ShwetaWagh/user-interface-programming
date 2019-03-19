@@ -1,0 +1,494 @@
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    color: white;
+}
+
+.customer_col_30 {
+    flex: 30%;
+}
+
+.customer_col_50 {
+    flex: 50%;
+}
+
+.customer_col_70 {
+    flex: 70%;
+}
+
+
+.customer_index_body {
+    /*height: 100%;*/
+    background-image: url("../Images/wood_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.customer_header {
+    flex: 50%;
+    text-align: right;
+    padding-left: 2%;
+    padding-top: 2%;
+    padding-right: 4%;
+}
+
+/*language icon */
+
+.customer_language {
+    width: 3.3%;
+    height: auto;
+    padding: 10px;
+}
+
+/*customerr_home*/
+
+.customer_row {
+    display: flex;
+    width: 100%;
+    border: none;
+    height: 100%;
+}
+
+/*coustomer_index*/
+
+.customer_bg_dark_overlay{
+      background: rgba(0, 0, 0, 0.5);
+      width:      100%;
+      height:     100%; 
+      z-index:    10;
+      top:        0; 
+      left:       0; 
+      position:   fixed;
+}
+
+
+
+.customer_index_left {
+    flex: 65%;
+    margin-left: 2%;
+    margin-right: 5%;
+    border: none;
+
+}
+
+.customer_index_img {
+    width: 110%;
+    height: auto;
+    box-shadow: 5px 10px 18px #01010111;
+    border: none;
+}
+
+.customer_index_right {
+    flex: 35%;
+    margin-left: 5%;
+    margin-right: 2%;
+    border: none;
+}
+
+.customer_index_logo {
+    width: 60%;
+    /* you can use % */
+    height: auto;
+    box-shadow: 5px 10px 18px #01010111;
+    border: none;
+}
+
+.customer_index_menu {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+/*costomer_menu*/
+
+.customer_menu_body {
+    /*height: 100%;*/
+    background-image: url("../Images/wood_bg.jpg");
+    background-repeat: no-repeat;
+    /background-size: cover;
+}
+
+.customer_menu_left {
+    position: absolute;
+    padding: 4%;
+    margin: 1.5% 8% 0% 3%;
+    width: 55%;
+    height: 68%;
+
+    border: none;
+
+    background: #484848;
+    opacity: 0.5;
+
+    overflow: scroll;
+}
+
+.customer_menu_left_header a {
+    text-decoration: none;
+    color: white;
+}
+
+.customer_menu_h1 {
+    font-size: 50px;
+    opacity: 1;
+    line-height: 10px;
+}
+
+customer_menu_item_name {
+    cursor: move;
+}
+
+.customer_menu_sub_header {
+    box-sizing: border-box;
+    appearance: none;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    box-shadow: 1px 2px #888888;
+    text-align: center;
+    font-size: 25px;
+    float: right;
+    border: 1px solid white;
+    margin: 0.5%;
+    padding: 1%;
+}
+
+.customer_menu_sub_header:hover {
+    color: grey;
+    outline: 0;
+    border: 2px solid white;
+    transition: box-shadow 500ms ease-in-out, color 300ms ease-in-out;
+    box-shadow: 0 0 40px 40px white inset;
+}
+
+.customer_menu_left table {
+    width: 100%;
+    margin: 5%;
+}
+
+.customer_menu_right {
+    position: absolute;
+    padding: 4%;
+    margin: 1.5% 2% 0% 6%;
+    width: 15%;
+    height: 68%;
+
+    border: none;
+
+    background: #484848;
+    opacity: 0.5;
+
+    overflow: scroll;
+}
+
+.customer_menu_h3 {
+    font-size: 35px;
+    opacity: 1;
+    line-height: 10px;
+    margin-bottom: 10%;
+    border: 0px 0px 1px 0px solid white;
+}
+
+.customer_menu_order_table_head {
+    width: 100%;
+    font-weight: bold;
+    margin: 3%;
+    padding: 1%;
+}
+
+.customer_menu_order_table {
+    width: 100%;
+    margin: 3%;
+    padding: 1%;
+}
+
+.customer_menu_right table {
+    table-layout: auto;
+    width: 100%;
+}
+
+.customer_menu_order_table_head tr {
+    border-bottom: 1px solid white;
+}
+
+.customer_menu_center {
+    text-align: center;
+    margin-left: 5%
+}
+
+.customer_menu_undo_redo {
+    box-sizing: border-box;
+    appearance: none;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+
+    text-align: center;
+    font-size: 10px;
+    margin: 0.5%;
+    padding: 1%;
+}
+
+.customer_menu_button {
+    box-sizing: border-box;
+    appearance: none;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    box-shadow: 1px 2px #888888;
+
+    text-align: center;
+    font-size: 15px;
+    border: 1px solid white;
+    margin: 0.5%;
+    padding: 1%;
+}
+
+.customer_menu_button:hover {
+    color: grey;
+    outline: 0;
+    border: 2px solid white;
+    transition: box-shadow 500ms ease-in-out, color 300ms ease-in-out;
+    box-shadow: 0 0 40px 40px white inset;
+}
+
+
+/*Drag and Drop*/
+
+.product_drag_area{  
+                width:350px;  
+                height:350px;  
+                border:2px dashed #ccc;  
+                color:#ccc;  
+                line-height:200px;  
+                text-align:center;  
+                font-size:24px;  
+           }  
+.product_drag_over{  
+                color:#000;  
+                border-color:#000;  
+           }  
+
+/*customer_vip_login*/
+
+.customer_vip_login_left {
+    flex: 65%;
+    margin-left: 2%;
+    margin-right: 5%;
+    border: none;
+}
+
+.customer_vip_login_img {
+    width: 120%;
+    height: auto;
+    box-shadow: 5px 10px 18px #01010111;
+    border: none;
+}
+
+.customer_vip_login_right {
+    flex: 50%;
+    margin-left: 5%;
+    margin-right: 10%;
+    border: none;
+}
+
+.customer_vip_login_center {
+    text-align: center;
+    margin-left: 5%
+}
+
+.customer_vip_login_input_style {
+    margin-top: 50%;
+}
+
+.customer_vip_login_input {
+    border-style: none;
+    background: #D3D3D3;
+    outline: none;
+    width: 325px;
+    height: 40px;
+    opacity: 0.65;
+    padding-left: 15px;
+    font-size: 25px;
+    margin: 10px;
+    color: white;
+}
+
+.customer_vip_login_button {
+    box-sizing: border-box;
+    appearance: none;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    box-shadow: 1px 2px #888888;
+
+    text-align: center;
+    font-size: 25px;
+    border: 1px solid white;
+    margin: 0.5%;
+    padding: 1%;
+}
+
+.customer_vip_login_button:hover {
+    color: grey;
+    outline: 0;
+    border: 2px solid white;
+    transition: box-shadow 500ms ease-in-out, color 300ms ease-in-out;
+    box-shadow: 0 0 40px 40px white inset;
+}
+
+
+/*customer conform order*/
+
+.customer_confirm_body {
+    /*height: 100%;*/
+    background-image: url("../Images/wood_bg_tray.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.customer_confirm_right_bg{
+    height: inherit;
+    width: 75%;
+    float: right;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.customer_confirm_left{
+    height: 100%;
+}
+
+.customer_vip_login_btn{
+    height: 320px;
+    margin-top: 64%;
+    margin-bottom: 27%;
+}
+
+.customer_confirm_menu_btn{
+    bottom: 0;
+    position: absolute;
+  
+}
+
+.customer_confirm_order_right {
+    padding: 8%;
+    padding-top: 0%;
+    width: 80%;
+    height: 870px;
+    margin-right: 0px;
+    border: none;
+    overflow: scroll;
+}
+
+.customer_confirm_order_h1 {
+    font-size: 36px;
+    margin-bottom: 5%;
+}
+
+.customer_confirm_order_list {
+    width: 100%;
+    height: 600px;
+    font-size: 24px;
+    padding: 5% 2% 5% 2%;
+}
+
+
+.customer_confirm_order_list tbody {
+    display: table-row-group;
+    vertical-align: top;
+    border-color: inherit;
+}
+
+.align_top{
+    vertical-align: text-top;
+}
+
+.align_right{
+    text-align: right;
+}
+
+.align_left{
+    text-align: left;
+}
+
+.align_center{
+    text-align: center;
+}
+
+.customer_confirm_order_button {
+    box-sizing: border-box;
+    appearance: none;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    box-shadow: 1px 2px #888888;
+    width: 35%;
+    height: 8%;
+
+    text-align: center;
+    font-size: 26px;
+    border: 1px solid white;
+    margin: 0.5%;
+    padding: 2%;
+}
+
+.customer_confirm_order_button:hover {
+    color: grey;
+    outline: 0;
+    border: 2px solid white;
+    transition: box-shadow 500ms ease-in-out, color 300ms ease-in-out;
+    box-shadow: 0 0 40px 40px white inset;
+}
+
+
+.customer_confirm_order_table table {
+    table-layout: auto;
+    width: 100%;
+}
+
+.customer_confirm_order_table img {
+    width: 5%;
+}
+
+
+
+
+/*customer_pay*/
+
+.customer_pay_body {
+    background-image: url("../Images/order_confirm_bg.jpg");
+    background-size: cover;
+}
+
+.customer_pay_right {
+    position: absolute;
+    padding: 4%;
+    margin: 1.5% 2% 0% 6%;
+    width: 40%;
+    height: 68%;
+    right: 0;
+    border: none;
+
+    background: #484848;
+    opacity: 0.5;
+
+}
+
+.customer_pay_center {
+    text-align: center;
+    margin-left: 5%
+}
+
+.customer_pay_h1 {
+    font-size: 50px;
+    opacity: 1;
+    line-height: 10px;
+}
+
+.customer_pay_right img {
+    width: 10%;
+}
